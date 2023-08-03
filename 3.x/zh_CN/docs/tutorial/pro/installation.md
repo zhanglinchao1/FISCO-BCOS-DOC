@@ -528,6 +528,12 @@ RPC服务和Gateway服务和node服务均部署完成后，可部署区块链节
 # 进入操作目录
 cd ~/fisco/BcosBuilder/pro
 
+#Centos用户检查是否安装ansible，
+ansible --version
+
+如果未安装请运行下述命令，已安装请跳过。
+yum -y install ansible
+
 # 部署并启动区块链节点服务
 python3 build_chain.py chain -o deploy -t monitor
 ```
